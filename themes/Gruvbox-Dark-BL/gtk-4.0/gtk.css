@@ -156,6 +156,12 @@ read if you used those and something break with a version upgrade you're on your
 .background {
   background-color: #ff0000;
   color: #ddc7a1;
+
+  /* MY SETTINGS TO RESET WINDOW BORDERS FOR WM'S */
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 0 0;
+  /**/
 }
 
 dnd {
@@ -7176,4 +7182,10 @@ indicatorbin.needs-attention > indicator {
 
 indicatorbin.needs-attention > indicator > label {
   color: rgba(0, 0, 0, 0.87);
+}
+
+/* MY SETTINGS TO RESET WINDOW BORDERS FOR WM'S */
+
+window.solid-csd {
+  border: none;
 }
