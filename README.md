@@ -28,7 +28,7 @@ Here are some commands to install on some distributions.
 
 The themes work on versions 40 to 43 of the GNOME D.E. just follow the steps below for installation:
 
-- Download the [themes](https://www.pling.com/u/fkorpsvart) packs and extract them
+- Download the [themes](https://www.pling.com/u/fkorpsvart) packs and extract them (For WM users, use `no-border` branch)
 - Move the extracted files to the following paths:
   - For GTK3: `~/.themes` In this path you must move the entire theme folder.
   - For GTK4: `~/.config/gtk-4.0` The files to move to this path can be found inside the theme directory in the `gtk-4.0` folder, copy only the `assets`, `gtk.css` and `gtk-dark.css` files or create a symlinks.
@@ -37,7 +37,6 @@ The themes work on versions 40 to 43 of the GNOME D.E. just follow the steps bel
 
 - For GTK3, apply themes from `Gnome Tweaks`.
 - For GTK4 applications it is only necessary to have moved the `assets`, `gtk.css` and `gtk-dark.css` files to the `~/.config/gtk-4.0` path, and if you notice that the theme has not been applied, just close and reopen the application.
-- (For WM users, use `no-border` branch)
 
 ## Flatpak
 
