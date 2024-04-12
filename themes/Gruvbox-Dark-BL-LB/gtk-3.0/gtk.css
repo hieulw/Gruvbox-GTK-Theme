@@ -158,7 +158,9 @@ read if you used those and something break with a version upgrade you're on your
 
 @keyframes ripple-on-slider {
   to {
-    background-size: auto, 1000% 1000%;
+    background-size:
+      auto,
+      1000% 1000%;
   }
 }
 
@@ -1119,7 +1121,7 @@ assistant .sidebar label.highlight {
 spinner {
   background: none;
   opacity: 0;
-  -gtk-icon-source: -gtk-icontheme('process-working-symbolic');
+  -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
 }
 
 spinner:checked {
@@ -1141,7 +1143,8 @@ entry {
   padding: 0 8px;
   border-radius: 6px;
   caret-color: currentColor;
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
     box-shadow 300ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: inset 0 0 0 2px transparent;
   background-color: rgba(221, 199, 161, 0.04);
@@ -1253,7 +1256,8 @@ entry undershoot.right {
 spinbutton.error.vertical,
 spinbutton.error:not(.vertical),
 entry.error {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
     box-shadow 300ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: inset 0 0 0 2px transparent;
   background-color: rgba(221, 199, 161, 0.04);
@@ -1278,7 +1282,8 @@ entry.error:disabled {
 spinbutton.warning.vertical,
 spinbutton.warning:not(.vertical),
 entry.warning {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
     box-shadow 300ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: inset 0 0 0 2px transparent;
   background-color: rgba(221, 199, 161, 0.04);
@@ -1310,7 +1315,8 @@ entry progress {
 
 .gedit-search-slider .linked:not(.vertical) > entry {
   border-radius: 6px;
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
     box-shadow 300ms cubic-bezier(0, 0, 0.2, 1);
   border-image: none;
   box-shadow: inset 0 0 0 2px transparent;
@@ -1334,7 +1340,8 @@ entry progress {
 }
 
 .gedit-search-slider .linked:not(.vertical) > entry.error {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
     box-shadow 300ms cubic-bezier(0, 0, 0.2, 1);
   border-image: none;
   box-shadow: inset 0 0 0 2px transparent;
@@ -1367,7 +1374,8 @@ entry progress {
 }
 
 .gedit-search-slider .linked:not(.vertical) > entry.warning {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
     box-shadow 300ms cubic-bezier(0, 0, 0.2, 1);
   border-image: none;
   box-shadow: inset 0 0 0 2px transparent;
@@ -1534,7 +1542,8 @@ actionbar
   .linked
   > button:not(.suggested-action):not(.destructive-action),
 button {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
     background-size 300ms cubic-bezier(0, 0, 0.2, 1),
     background-image 1200ms cubic-bezier(0, 0, 0.2, 1);
   outline: none;
@@ -1571,8 +1580,11 @@ actionbar
   .linked
   > button:active:not(.suggested-action):not(.destructive-action),
 button:active {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 0ms,
-    background-image 0ms, border 0ms;
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
+    background-size 0ms,
+    background-image 0ms,
+    border 0ms;
   animation: ripple 225ms cubic-bezier(0, 0, 0.2, 1) forwards;
   box-shadow: inset 0 0 0 9999px alpha(currentColor, 0.08);
   background-image: radial-gradient(
@@ -1854,7 +1866,8 @@ headerbar button:not(.suggested-action):not(.destructive-action),
 toolbar button,
 combobox > .linked:not(.vertical) > button:not(:only-child),
 button.flat {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
     border-image 225ms cubic-bezier(0, 0, 0.2, 1),
     background-size 300ms cubic-bezier(0, 0, 0.2, 1),
     background-image 1200ms cubic-bezier(0, 0, 0.2, 1);
@@ -2077,8 +2090,10 @@ headerbar button:active:not(.suggested-action):not(.destructive-action),
 toolbar button:active,
 combobox > .linked:not(.vertical) > button:active:not(:only-child),
 button.flat:active {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1),
-    border-image 225ms cubic-bezier(0, 0, 0.2, 1), background-size 0ms,
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
+    border-image 225ms cubic-bezier(0, 0, 0.2, 1),
+    background-size 0ms,
     background-image 0ms;
   animation: ripple 225ms cubic-bezier(0, 0, 0.2, 1) forwards;
   box-shadow: inset 0 0 0 9999px alpha(currentColor, 0.08);
@@ -2351,9 +2366,11 @@ button.suggested-action:disabled {
 }
 
 button.suggested-action:hover {
-  box-shadow: inset 0 0 0 9999px transparent,
+  box-shadow:
+    inset 0 0 0 9999px transparent,
     0 2px 2.4px -1px rgba(212, 190, 152, 0.2),
-    0 4px 3px 0 rgba(212, 190, 152, 0.14), 0 1px 6px 0 rgba(212, 190, 152, 0.12);
+    0 4px 3px 0 rgba(212, 190, 152, 0.14),
+    0 1px 6px 0 rgba(212, 190, 152, 0.12);
 }
 
 button.suggested-action:checked {
@@ -2361,7 +2378,8 @@ button.suggested-action:checked {
 }
 
 button.suggested-action:checked:hover {
-  box-shadow: inset 0 0 0 9999px transparent,
+  box-shadow:
+    inset 0 0 0 9999px transparent,
     0 3px 3px -3px rgba(212, 190, 152, 0.3),
     0 2px 3px -1px rgba(212, 190, 152, 0.24),
     0 2px 5px 0 rgba(212, 190, 152, 0.12);
@@ -2399,9 +2417,11 @@ button.destructive-action:disabled {
 }
 
 button.destructive-action:hover {
-  box-shadow: inset 0 0 0 9999px transparent,
+  box-shadow:
+    inset 0 0 0 9999px transparent,
     0 2px 2.4px -1px rgba(234, 105, 98, 0.2),
-    0 4px 3px 0 rgba(234, 105, 98, 0.14), 0 1px 6px 0 rgba(234, 105, 98, 0.12);
+    0 4px 3px 0 rgba(234, 105, 98, 0.14),
+    0 1px 6px 0 rgba(234, 105, 98, 0.12);
 }
 
 button.destructive-action:checked {
@@ -2409,7 +2429,8 @@ button.destructive-action:checked {
 }
 
 button.destructive-action:checked:hover {
-  box-shadow: inset 0 0 0 9999px transparent,
+  box-shadow:
+    inset 0 0 0 9999px transparent,
     0 3px 3px -3px rgba(234, 105, 98, 0.3),
     0 2px 3px -1px rgba(234, 105, 98, 0.24),
     0 2px 5px 0 rgba(234, 105, 98, 0.12);
@@ -2484,11 +2505,11 @@ modelbutton.flat,
 }
 
 modelbutton.flat arrow.left {
-  -gtk-icon-source: -gtk-icontheme('pan-start-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
 }
 
 modelbutton.flat arrow.right {
-  -gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 
 button.color {
@@ -2613,7 +2634,7 @@ treeview spinbutton:not(.vertical) entry {
  * ComboBoxes *
  **************/
 combobox arrow {
-  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
   min-height: 16px;
   min-width: 16px;
 }
@@ -2685,7 +2706,8 @@ combobox > .linked:not(.vertical) > button:not(:only-child) {
 button.combo:only-child {
   border-radius: 6px;
   font-weight: normal;
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
     box-shadow 300ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: inset 0 0 0 2px transparent;
   background-color: rgba(221, 199, 161, 0.04);
@@ -2732,8 +2754,10 @@ toolbar.osd {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   padding: 6px;
   border-radius: 6px;
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12),
+  box-shadow:
+    0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 6px 0 rgba(0, 0, 0, 0.12),
     inset 0 1px rgba(221, 199, 161, 0.1);
   background-color: #3c3836;
 }
@@ -2741,8 +2765,10 @@ toolbar.osd {
 frame.documents-dropdown:backdrop,
 .app-notification:backdrop,
 toolbar.osd:backdrop {
-  box-shadow: 0 3px 2px -3px rgba(0, 0, 0, 0.3),
-    0 2px 2px -1px rgba(0, 0, 0, 0.24), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+  box-shadow:
+    0 3px 2px -3px rgba(0, 0, 0, 0.3),
+    0 2px 2px -1px rgba(0, 0, 0, 0.24),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12),
     inset 0 1px rgba(221, 199, 161, 0.1);
 }
 
@@ -2953,7 +2979,8 @@ headerbar
 }
 
 .titlebar {
-  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    background-color 75ms cubic-bezier(0, 0, 0.2, 1),
     color 75ms cubic-bezier(0, 0, 0.2, 1);
   background-color: #1d2021;
   color: #ddc7a1;
@@ -3042,7 +3069,8 @@ headerbar
 }
 
 .titlebar.selection-mode {
-  transition: background-color 0.1ms 225ms,
+  transition:
+    background-color 0.1ms 225ms,
     color 75ms cubic-bezier(0, 0, 0.2, 1);
   animation: ripple-on-headerbar 225ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: inset 0 1px rgba(221, 199, 161, 0);
@@ -3122,7 +3150,7 @@ headerbar
 }
 
 .titlebar.selection-mode .selection-menu .arrow {
-  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 
 .titlebar .selection-mode {
@@ -3366,9 +3394,9 @@ treeview.view {
 * {
   -gtktreeview-horizontal-separator: 4;
   -gtktreeview-grid-line-width: 1;
-  -gtktreeview-grid-line-pattern: '';
+  -gtktreeview-grid-line-pattern: "";
   -gtktreeview-tree-line-width: 1;
-  -gtktreeview-tree-line-pattern: '';
+  -gtktreeview-tree-line-pattern: "";
   -gtktreeview-expander-size: 16;
 }
 
@@ -3408,7 +3436,7 @@ treeview.view.before:drop(active) {
 }
 
 treeview.view.expander {
-  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
   -gtk-icon-transform: rotate(-90deg);
   color: rgba(221, 199, 161, 0.7);
 }
@@ -3622,14 +3650,14 @@ menu menuitem arrow,
 menu menuitem arrow:dir(ltr),
 .menu menuitem arrow:dir(ltr),
 .context-menu menuitem arrow:dir(ltr) {
-  -gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
   margin-left: 8px;
 }
 
 menu menuitem arrow:dir(rtl),
 .menu menuitem arrow:dir(rtl),
 .context-menu menuitem arrow:dir(rtl) {
-  -gtk-icon-source: -gtk-icontheme('pan-end-symbolic-rtl');
+  -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
   margin-right: 8px;
 }
 
@@ -3663,7 +3691,7 @@ menu > arrow.top,
 .context-menu > arrow.top {
   margin-top: 0;
   border-radius: 6px;
-  -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
 }
 
 menu > arrow.bottom,
@@ -3672,7 +3700,7 @@ menu > arrow.bottom,
   margin-top: 8px;
   margin-bottom: -12px;
   border-radius: 6px;
-  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 
 menu > arrow:hover,
@@ -3709,16 +3737,20 @@ popover.background {
 popover.background,
 .csd popover.background {
   border: 1px solid rgba(221, 199, 161, 0.2);
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.05),
-    0 4px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.05),
+  box-shadow:
+    0 2px 3px -1px rgba(0, 0, 0, 0.05),
+    0 4px 6px 0 rgba(0, 0, 0, 0.06),
+    0 1px 10px 0 rgba(0, 0, 0, 0.05),
     0 0 0 1px rgba(0, 0, 0, 0.75);
   background-clip: border-box;
 }
 
 popover.background:backdrop,
 .csd popover.background:backdrop {
-  box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.05),
-    0 2px 3px -1px rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.05),
+  box-shadow:
+    0 3px 2px -2px rgba(0, 0, 0, 0.05),
+    0 2px 3px -1px rgba(0, 0, 0, 0.06),
+    0 1px 4px 0 rgba(0, 0, 0, 0.05),
     0 0 0 1px rgba(0, 0, 0, 0.75);
 }
 
@@ -3796,7 +3828,9 @@ popover.background list separator {
  *************/
 tabbox > tab,
 notebook > header tab {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 0ms,
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
+    background-size 0ms,
     background-image 0ms;
   min-height: 24px;
   min-width: 24px;
@@ -3878,13 +3912,13 @@ notebook > header.bottom > tabs > arrow {
 notebook > header.top > tabs > arrow.down,
 notebook > header.bottom > tabs > arrow.down {
   margin-left: 0;
-  -gtk-icon-source: -gtk-icontheme('pan-start-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
 }
 
 notebook > header.top > tabs > arrow.up,
 notebook > header.bottom > tabs > arrow.up {
   margin-right: 0;
-  -gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 
 notebook > header.left > tabs > arrow {
@@ -3904,13 +3938,13 @@ notebook > header.right > tabs > arrow {
 notebook > header.left > tabs > arrow.down,
 notebook > header.right > tabs > arrow.down {
   margin-top: 0;
-  -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
 }
 
 notebook > header.left > tabs > arrow.up,
 notebook > header.right > tabs > arrow.up {
   margin-bottom: 0;
-  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 
 notebook > header > tabs > arrow {
@@ -4112,19 +4146,19 @@ scrollbar button {
 }
 
 scrollbar.vertical button.down {
-  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 
 scrollbar.vertical button.up {
-  -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
 }
 
 scrollbar.horizontal button.down {
-  -gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 
 scrollbar.horizontal button.up {
-  -gtk-icon-source: -gtk-icontheme('pan-start-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
 }
 
 /**********
@@ -4195,16 +4229,16 @@ switch:checked slider {
 .view.content-view.check:not(list),
 .content-view .tile check:not(list) {
   -gtk-icon-source: -gtk-scaled(
-    url('assets/selectionmode-checkbox-unchecked-dark.png'),
-    url('assets/selectionmode-checkbox-unchecked-dark@2.png')
+    url("assets/selectionmode-checkbox-unchecked-dark.png"),
+    url("assets/selectionmode-checkbox-unchecked-dark@2.png")
   );
 }
 
 .view.content-view.check:not(list):checked,
 .content-view .tile check:not(list):checked {
   -gtk-icon-source: -gtk-scaled(
-    url('assets/selectionmode-checkbox-checked-dark.png'),
-    url('assets/selectionmode-checkbox-checked-dark@2.png')
+    url("assets/selectionmode-checkbox-checked-dark.png"),
+    url("assets/selectionmode-checkbox-checked-dark@2.png")
   );
 }
 
@@ -4325,37 +4359,37 @@ menu menuitem radio:disabled {
 
 check {
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/checkbox-unchecked-symbolic.svg')
+    url("assets/scalable/checkbox-unchecked-symbolic.svg")
   );
 }
 
 check:checked {
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/checkbox-checked-symbolic.svg')
+    url("assets/scalable/checkbox-checked-symbolic.svg")
   );
 }
 
 check:indeterminate {
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/checkbox-mixed-symbolic.svg')
+    url("assets/scalable/checkbox-mixed-symbolic.svg")
   );
 }
 
 radio {
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/radio-unchecked-symbolic.svg')
+    url("assets/scalable/radio-unchecked-symbolic.svg")
   );
 }
 
 radio:checked {
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/radio-checked-symbolic.svg')
+    url("assets/scalable/radio-checked-symbolic.svg")
   );
 }
 
 radio:indeterminate {
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/radio-mixed-symbolic.svg')
+    url("assets/scalable/radio-mixed-symbolic.svg")
   );
 }
 
@@ -4365,21 +4399,21 @@ menu menuitem check {
   min-width: 16px;
   border-radius: 6px;
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/small-checkbox-unchecked-symbolic.svg')
+    url("assets/scalable/small-checkbox-unchecked-symbolic.svg")
   );
 }
 
 #MozillaGtkWidget > widget > checkbutton > check:checked,
 menu menuitem check:checked {
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/small-checkbox-checked-symbolic.svg')
+    url("assets/scalable/small-checkbox-checked-symbolic.svg")
   );
 }
 
 #MozillaGtkWidget > widget > checkbutton > check:indeterminate,
 menu menuitem check:indeterminate {
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/small-checkbox-mixed-symbolic.svg')
+    url("assets/scalable/small-checkbox-mixed-symbolic.svg")
   );
 }
 
@@ -4389,21 +4423,21 @@ menu menuitem radio {
   min-width: 16px;
   border-image: none;
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/small-radio-unchecked-symbolic.svg')
+    url("assets/scalable/small-radio-unchecked-symbolic.svg")
   );
 }
 
 #MozillaGtkWidget > widget > radiobutton > radio:checked,
 menu menuitem radio:checked {
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/small-radio-checked-symbolic.svg')
+    url("assets/scalable/small-radio-checked-symbolic.svg")
   );
 }
 
 #MozillaGtkWidget > widget > radiobutton > radio:indeterminate,
 menu menuitem radio:indeterminate {
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/small-radio-mixed-symbolic.svg')
+    url("assets/scalable/small-radio-mixed-symbolic.svg")
   );
 }
 
@@ -4418,15 +4452,20 @@ radio:not(:checked):indeterminate:active {
 
 check:not(:checked),
 radio:not(:checked) {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
     background-size 300ms cubic-bezier(0, 0, 0.2, 1),
-    background-image 1200ms cubic-bezier(0, 0, 0.2, 1), -gtk-icon-transform 0;
+    background-image 1200ms cubic-bezier(0, 0, 0.2, 1),
+    -gtk-icon-transform 0;
 }
 
 check:not(:checked):active,
 radio:not(:checked):active {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 0,
-    background-image 0, -gtk-icon-transform 0;
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
+    background-size 0,
+    background-image 0,
+    -gtk-icon-transform 0;
 }
 
 menu menuitem check:not(:checked),
@@ -4476,7 +4515,7 @@ treeview.view radio:selected {
 
 treeview.view radio:checked {
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/radio-checked-symbolic.svg')
+    url("assets/scalable/radio-checked-symbolic.svg")
   );
   border-image: none;
 }
@@ -4557,11 +4596,15 @@ scale slider {
 }
 
 scale slider:hover {
-  box-shadow: inset 0 0 0 2px #d4be98, 0 0 0 8px rgba(221, 199, 161, 0.12);
+  box-shadow:
+    inset 0 0 0 2px #d4be98,
+    0 0 0 8px rgba(221, 199, 161, 0.12);
 }
 
 scale slider:active {
-  box-shadow: inset 0 0 0 4px #d4be98, 0 0 0 8px rgba(221, 199, 161, 0.12);
+  box-shadow:
+    inset 0 0 0 4px #d4be98,
+    0 0 0 8px rgba(221, 199, 161, 0.12);
 }
 
 scale slider:disabled {
@@ -4629,14 +4672,17 @@ scale.vertical indicator {
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider {
-  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    background-color 75ms cubic-bezier(0, 0, 0.2, 1),
     background-size 300ms cubic-bezier(0, 0, 0.2, 1),
     background-image 1200ms cubic-bezier(0, 0, 0.2, 1);
   min-height: 32px;
   min-width: 32px;
   margin: -15px;
   border-radius: 50%;
-  background-size: auto, 1000% 1000%;
+  background-size:
+    auto,
+    1000% 1000%;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: transparent;
@@ -4662,46 +4708,53 @@ scale.horizontal.marks-before:not(.marks-after) slider:focus:hover {
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider:active {
-  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1),
-    background-size 0ms, background-image 0ms;
+  transition:
+    background-color 75ms cubic-bezier(0, 0, 0.2, 1),
+    background-size 0ms,
+    background-image 0ms;
   animation: ripple-on-slider 225ms cubic-bezier(0, 0, 0.2, 1) forwards;
-  background-size: auto, 0% 0%;
+  background-size:
+    auto,
+    0% 0%;
   background-color: alpha(currentColor, 0.08);
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider {
   background-image: -gtk-scaled(
-      url('assets/scale-horz-marks-before-slider-dark.png'),
-      url('assets/scale-horz-marks-before-slider-dark@2.png')
+      url("assets/scale-horz-marks-before-slider-dark.png"),
+      url("assets/scale-horz-marks-before-slider-dark@2.png")
     ),
     radial-gradient(circle, transparent 10%, transparent 0%);
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider:disabled {
   background-image: -gtk-scaled(
-      url('assets/scale-horz-marks-before-slider-disabled-dark.png'),
-      url('assets/scale-horz-marks-before-slider-disabled-dark@2.png')
+      url("assets/scale-horz-marks-before-slider-disabled-dark.png"),
+      url("assets/scale-horz-marks-before-slider-disabled-dark@2.png")
     ),
     radial-gradient(circle, transparent 10%, transparent 0%);
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider:active {
   background-image: -gtk-scaled(
-      url('assets/scale-horz-marks-before-slider-dark.png'),
-      url('assets/scale-horz-marks-before-slider-dark@2.png')
+      url("assets/scale-horz-marks-before-slider-dark.png"),
+      url("assets/scale-horz-marks-before-slider-dark@2.png")
     ),
     radial-gradient(circle, alpha(currentColor, 0.12) 10%, transparent 0%);
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider {
-  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    background-color 75ms cubic-bezier(0, 0, 0.2, 1),
     background-size 300ms cubic-bezier(0, 0, 0.2, 1),
     background-image 1200ms cubic-bezier(0, 0, 0.2, 1);
   min-height: 32px;
   min-width: 32px;
   margin: -15px;
   border-radius: 50%;
-  background-size: auto, 1000% 1000%;
+  background-size:
+    auto,
+    1000% 1000%;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: transparent;
@@ -4727,46 +4780,53 @@ scale.horizontal.marks-after:not(.marks-before) slider:focus:hover {
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider:active {
-  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1),
-    background-size 0ms, background-image 0ms;
+  transition:
+    background-color 75ms cubic-bezier(0, 0, 0.2, 1),
+    background-size 0ms,
+    background-image 0ms;
   animation: ripple-on-slider 225ms cubic-bezier(0, 0, 0.2, 1) forwards;
-  background-size: auto, 0% 0%;
+  background-size:
+    auto,
+    0% 0%;
   background-color: alpha(currentColor, 0.08);
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider {
   background-image: -gtk-scaled(
-      url('assets/scale-horz-marks-after-slider-dark.png'),
-      url('assets/scale-horz-marks-after-slider-dark@2.png')
+      url("assets/scale-horz-marks-after-slider-dark.png"),
+      url("assets/scale-horz-marks-after-slider-dark@2.png")
     ),
     radial-gradient(circle, transparent 10%, transparent 0%);
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider:disabled {
   background-image: -gtk-scaled(
-      url('assets/scale-horz-marks-after-slider-disabled-dark.png'),
-      url('assets/scale-horz-marks-after-slider-disabled-dark@2.png')
+      url("assets/scale-horz-marks-after-slider-disabled-dark.png"),
+      url("assets/scale-horz-marks-after-slider-disabled-dark@2.png")
     ),
     radial-gradient(circle, transparent 10%, transparent 0%);
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider:active {
   background-image: -gtk-scaled(
-      url('assets/scale-horz-marks-after-slider-dark.png'),
-      url('assets/scale-horz-marks-after-slider-dark@2.png')
+      url("assets/scale-horz-marks-after-slider-dark.png"),
+      url("assets/scale-horz-marks-after-slider-dark@2.png")
     ),
     radial-gradient(circle, alpha(currentColor, 0.12) 10%, transparent 0%);
 }
 
 scale.vertical.marks-before:not(.marks-after) slider {
-  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    background-color 75ms cubic-bezier(0, 0, 0.2, 1),
     background-size 300ms cubic-bezier(0, 0, 0.2, 1),
     background-image 1200ms cubic-bezier(0, 0, 0.2, 1);
   min-height: 32px;
   min-width: 32px;
   margin: -15px;
   border-radius: 50%;
-  background-size: auto, 1000% 1000%;
+  background-size:
+    auto,
+    1000% 1000%;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: transparent;
@@ -4792,46 +4852,53 @@ scale.vertical.marks-before:not(.marks-after) slider:focus:hover {
 }
 
 scale.vertical.marks-before:not(.marks-after) slider:active {
-  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1),
-    background-size 0ms, background-image 0ms;
+  transition:
+    background-color 75ms cubic-bezier(0, 0, 0.2, 1),
+    background-size 0ms,
+    background-image 0ms;
   animation: ripple-on-slider 225ms cubic-bezier(0, 0, 0.2, 1) forwards;
-  background-size: auto, 0% 0%;
+  background-size:
+    auto,
+    0% 0%;
   background-color: alpha(currentColor, 0.08);
 }
 
 scale.vertical.marks-before:not(.marks-after) slider {
   background-image: -gtk-scaled(
-      url('assets/scale-vert-marks-before-slider-dark.png'),
-      url('assets/scale-vert-marks-before-slider-dark@2.png')
+      url("assets/scale-vert-marks-before-slider-dark.png"),
+      url("assets/scale-vert-marks-before-slider-dark@2.png")
     ),
     radial-gradient(circle, transparent 10%, transparent 0%);
 }
 
 scale.vertical.marks-before:not(.marks-after) slider:disabled {
   background-image: -gtk-scaled(
-      url('assets/scale-vert-marks-before-slider-disabled-dark.png'),
-      url('assets/scale-vert-marks-before-slider-disabled-dark@2.png')
+      url("assets/scale-vert-marks-before-slider-disabled-dark.png"),
+      url("assets/scale-vert-marks-before-slider-disabled-dark@2.png")
     ),
     radial-gradient(circle, transparent 10%, transparent 0%);
 }
 
 scale.vertical.marks-before:not(.marks-after) slider:active {
   background-image: -gtk-scaled(
-      url('assets/scale-vert-marks-before-slider-dark.png'),
-      url('assets/scale-vert-marks-before-slider-dark@2.png')
+      url("assets/scale-vert-marks-before-slider-dark.png"),
+      url("assets/scale-vert-marks-before-slider-dark@2.png")
     ),
     radial-gradient(circle, alpha(currentColor, 0.12) 10%, transparent 0%);
 }
 
 scale.vertical.marks-after:not(.marks-before) slider {
-  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    background-color 75ms cubic-bezier(0, 0, 0.2, 1),
     background-size 300ms cubic-bezier(0, 0, 0.2, 1),
     background-image 1200ms cubic-bezier(0, 0, 0.2, 1);
   min-height: 32px;
   min-width: 32px;
   margin: -15px;
   border-radius: 50%;
-  background-size: auto, 1000% 1000%;
+  background-size:
+    auto,
+    1000% 1000%;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: transparent;
@@ -4857,33 +4924,37 @@ scale.vertical.marks-after:not(.marks-before) slider:focus:hover {
 }
 
 scale.vertical.marks-after:not(.marks-before) slider:active {
-  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1),
-    background-size 0ms, background-image 0ms;
+  transition:
+    background-color 75ms cubic-bezier(0, 0, 0.2, 1),
+    background-size 0ms,
+    background-image 0ms;
   animation: ripple-on-slider 225ms cubic-bezier(0, 0, 0.2, 1) forwards;
-  background-size: auto, 0% 0%;
+  background-size:
+    auto,
+    0% 0%;
   background-color: alpha(currentColor, 0.08);
 }
 
 scale.vertical.marks-after:not(.marks-before) slider {
   background-image: -gtk-scaled(
-      url('assets/scale-vert-marks-after-slider-dark.png'),
-      url('assets/scale-vert-marks-after-slider-dark@2.png')
+      url("assets/scale-vert-marks-after-slider-dark.png"),
+      url("assets/scale-vert-marks-after-slider-dark@2.png")
     ),
     radial-gradient(circle, transparent 10%, transparent 0%);
 }
 
 scale.vertical.marks-after:not(.marks-before) slider:disabled {
   background-image: -gtk-scaled(
-      url('assets/scale-vert-marks-after-slider-disabled-dark.png'),
-      url('assets/scale-vert-marks-after-slider-disabled-dark@2.png')
+      url("assets/scale-vert-marks-after-slider-disabled-dark.png"),
+      url("assets/scale-vert-marks-after-slider-disabled-dark@2.png")
     ),
     radial-gradient(circle, transparent 10%, transparent 0%);
 }
 
 scale.vertical.marks-after:not(.marks-before) slider:active {
   background-image: -gtk-scaled(
-      url('assets/scale-vert-marks-after-slider-dark.png'),
-      url('assets/scale-vert-marks-after-slider-dark@2.png')
+      url("assets/scale-vert-marks-after-slider-dark.png"),
+      url("assets/scale-vert-marks-after-slider-dark@2.png")
     ),
     radial-gradient(circle, alpha(currentColor, 0.12) 10%, transparent 0%);
 }
@@ -5212,7 +5283,8 @@ list.navigation-sidebar {
 .budgie-popover scrolledwindow.sidebar:not(.categories) list > row.activatable,
 treeview.view header button,
 row.activatable {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
     background-size 300ms cubic-bezier(0, 0, 0.2, 1),
     background-image 1200ms cubic-bezier(0, 0, 0.2, 1);
   outline: none;
@@ -5242,7 +5314,9 @@ row.activatable:focus {
   > row.activatable:hover,
 treeview.view header button:hover,
 row.activatable:hover {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1), box-shadow 0ms,
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
+    box-shadow 0ms,
     background-size 300ms cubic-bezier(0, 0, 0.2, 1),
     background-image 1200ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: inset 0 0 0 9999px alpha(currentColor, 0.08);
@@ -5264,7 +5338,9 @@ treeview.view header button.has-open-popup,
 treeview.view header button:active,
 row.activatable.has-open-popup,
 row.activatable:active {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 0ms,
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
+    background-size 0ms,
     background-image 0ms;
   animation: ripple 225ms cubic-bezier(0, 0, 0.2, 1) forwards;
   box-shadow: inset 0 0 0 9999px alpha(currentColor, 0.08);
@@ -5318,7 +5394,7 @@ expander title > arrow {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
   min-width: 16px;
   min-height: 16px;
-  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
   -gtk-icon-transform: rotate(-90deg);
   color: rgba(221, 199, 161, 0.7);
 }
@@ -5642,7 +5718,9 @@ placessidebar.sidebar row.sidebar-new-bookmark-row image.sidebar-icon {
 }
 
 placessidebar.sidebar row:drop(active) {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1), box-shadow 0ms,
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
+    box-shadow 0ms,
     background-size 300ms cubic-bezier(0, 0, 0.2, 1),
     background-image 1200ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: inset 0 0 0 9999px alpha(currentColor, 0.08);
@@ -5681,7 +5759,9 @@ paned > separator.wide {
   background-color: #1d2021;
   background-image: image(rgba(221, 199, 161, 0.12)),
     image(rgba(221, 199, 161, 0.12));
-  background-size: 1px 1px, 1px 1px;
+  background-size:
+    1px 1px,
+    1px 1px;
 }
 
 paned.horizontal > separator {
@@ -5983,15 +6063,19 @@ colorswatch#editor-color-sample overlay {
 colorchooser .popover.osd {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   border-radius: 6px;
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12),
+  box-shadow:
+    0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 6px 0 rgba(0, 0, 0, 0.12),
     inset 0 1px rgba(221, 199, 161, 0.1);
   background-color: #3c3836;
 }
 
 colorchooser .popover.osd:backdrop {
-  box-shadow: 0 3px 2px -3px rgba(0, 0, 0, 0.3),
-    0 2px 2px -1px rgba(0, 0, 0, 0.24), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+  box-shadow:
+    0 3px 2px -3px rgba(0, 0, 0, 0.3),
+    0 2px 2px -1px rgba(0, 0, 0, 0.24),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12),
     inset 0 1px rgba(221, 199, 161, 0.1);
 }
 
@@ -6008,15 +6092,19 @@ colorchooser .popover.osd:backdrop {
 decoration {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   border-radius: 12px;
-  box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.2),
-    0 16px 14.4px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12),
+  box-shadow:
+    0 8px 6px -5px rgba(0, 0, 0, 0.2),
+    0 16px 14.4px 2px rgba(0, 0, 0, 0.14),
+    0 6px 18px 5px rgba(0, 0, 0, 0.12),
     0 0 0 100px transparent;
   margin: 8px;
 }
 
 decoration:backdrop {
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12),
+  box-shadow:
+    0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 6px 0 rgba(0, 0, 0, 0.12),
     0 0 0 100px transparent;
 }
 
@@ -6049,8 +6137,10 @@ decoration:backdrop {
 
 .csd.popup decoration {
   border-radius: 12px;
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 6px 0 rgba(0, 0, 0, 0.12);
 }
 
 tooltip.csd decoration {
@@ -6108,7 +6198,7 @@ button.titlebutton.close:not(.suggested-action):not(
 cursor-handle {
   color: #d4be98;
   -gtk-icon-source: -gtk-recolor(
-    url('assets/scalable/cursor-handle-symbolic.svg')
+    url("assets/scalable/cursor-handle-symbolic.svg")
   );
 }
 
@@ -6461,7 +6551,7 @@ popover.emoji-completion .emoji:hover {
 }
 
 .nautilus-window.background.csd notebook scrolledwindow .view:selected {
-  background-color: rgba(221, 199, 161, 0.20);
+  background-color: rgba(221, 199, 161, 0.2);
 }
 
 .nautilus-window.background.csd
@@ -6843,8 +6933,10 @@ window.org-gnome-gedit
   padding: 6px;
   background-color: #1d2021;
   color: #ddc7a1;
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 6px 0 rgba(0, 0, 0, 0.12);
   border-radius: 0 0 12px 12px;
 }
 
@@ -8440,7 +8532,9 @@ docktabstrip {
 }
 
 docktab {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 0ms,
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
+    background-size 0ms,
     background-image 0ms;
   min-height: 24px;
   min-width: 24px;
@@ -8463,7 +8557,8 @@ docktab:hover {
 }
 
 docktab:checked {
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    all 75ms cubic-bezier(0, 0, 0.2, 1),
     background-size 225ms cubic-bezier(0, 0, 0.2, 1),
     background-image 525ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: inset 0 -2px #d4be98;
@@ -8629,8 +8724,10 @@ GdMainIconView.content-view {
 .documents-counter {
   margin: 8px;
   border-radius: 9999px;
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 6px 0 rgba(0, 0, 0, 0.12);
   background-color: #d4be98;
   color: rgba(0, 0, 0, 0.87);
   font-weight: bold;
@@ -8723,7 +8820,7 @@ box.vertical > revealer > toolbar.search-bar {
 }
 
 box.vertical > revealer > toolbar.search-bar button > widget {
-  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 
 /*************
@@ -9116,7 +9213,8 @@ window#GearyMainWindow.background.csd
   > separator.sidebar {
   background-color: #1d2021;
   box-shadow: inset 0 -1px rgba(221, 199, 161, 0.12);
-  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1),
+  transition:
+    background-color 75ms cubic-bezier(0, 0, 0.2, 1),
     color 75ms cubic-bezier(0, 0, 0.2, 1),
     box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
 }
@@ -9418,8 +9516,10 @@ window.background.csd.unified.fullscreen > decoration-overlay {
 overlay > revealer.left > scrolledwindow.frame,
 overlay > revealer.right > scrolledwindow.frame {
   border-style: none;
-  box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.2),
-    0 16px 14.4px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 8px 6px -5px rgba(0, 0, 0, 0.2),
+    0 16px 14.4px 2px rgba(0, 0, 0, 0.14),
+    0 6px 18px 5px rgba(0, 0, 0, 0.12);
 }
 
 overlay > revealer.left > scrolledwindow.frame {
@@ -9835,8 +9935,10 @@ window.background.csd
  * GnuCash *
  ***********/
 #gnc-id-main-window gnc-id-sheet-list > scrolledwindow {
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 6px 0 rgba(0, 0, 0, 0.12);
   margin-top: -1px;
   border: 1px solid #473c29;
 }
@@ -9890,8 +9992,10 @@ UnityDecoration .menuitem:hover {
 
 .background:not(.csd) headerbar:not(.titlebar) {
   border-radius: 0;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.3),
-    0 1px 2px -1px rgba(0, 0, 0, 0.24), 0 1px 2px -0.6px rgba(0, 0, 0, 0.17);
+  box-shadow:
+    0 2px 2px -2px rgba(0, 0, 0, 0.3),
+    0 1px 2px -1px rgba(0, 0, 0, 0.24),
+    0 1px 2px -0.6px rgba(0, 0, 0, 0.17);
 }
 
 .background:not(.csd) headerbar.inline-toolbar:not(.titlebar) {
@@ -9922,7 +10026,7 @@ UnityPanelWidget:backdrop,
 }
 
 .menu IdoPlaybackMenuItem.menuitem:active {
-  -gtk-icon-source: -gtk-icontheme('process-working-symbolic');
+  -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
   animation: spin 1s linear infinite;
   color: #d4be98;
 }
@@ -10248,7 +10352,7 @@ na-tray-applet {
 }
 
 .caja-pathbar button > widget {
-  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
   -gtkarrow-arrow-scaling: 1;
 }
 
@@ -10333,7 +10437,7 @@ na-tray-applet {
 }
 
 .pluma-window statusbar frame button.flat widget {
-  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
   -gtkarrow-arrow-scaling: 1;
 }
 
@@ -10378,8 +10482,10 @@ na-tray-applet {
 .lock-dialog {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 7px;
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12),
+  box-shadow:
+    0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 6px 0 rgba(0, 0, 0, 0.12),
     inset 0 1px rgba(221, 199, 161, 0.1);
   background-color: #3c3836;
 }
@@ -10433,8 +10539,10 @@ MsdOsdWindow.background.osd .progressbar {
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.3);
   border-radius: 6px;
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 6px 0 rgba(0, 0, 0, 0.12);
   background-color: #3c3836;
 }
 
@@ -10993,8 +11101,10 @@ frame.raven-frame > border {
 
 .raven {
   background-color: #3c3836;
-  box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.2),
-    0 16px 14.4px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 8px 6px -5px rgba(0, 0, 0, 0.2),
+    0 16px 14.4px 2px rgba(0, 0, 0, 0.14),
+    0 6px 18px 5px rgba(0, 0, 0, 0.12);
 }
 
 .raven > box {
@@ -11150,8 +11260,10 @@ calendar.raven-calendar:selected {
   margin: 5px 9px;
   padding: 3px;
   border-radius: 12px;
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12),
+  box-shadow:
+    0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 6px 0 rgba(0, 0, 0, 0.12),
     inset 0 1px rgba(221, 199, 161, 0.1);
   background-color: #3c3836;
 }
@@ -11388,8 +11500,10 @@ window.background.csd.thunar
 #restart_dialog {
   margin: 8px;
   border-radius: 6px;
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12),
+  box-shadow:
+    0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 6px 0 rgba(0, 0, 0, 0.12),
     inset 0 1px rgba(221, 199, 161, 0.1);
   background-color: #3c3836;
 }
@@ -11562,4 +11676,19 @@ window.background.csd.thunar
 
 .nemo-window > grid > separator {
   background-color: transparent;
+}
+
+/* MY SETTINGS TO RESET WINDOW BORDERS FOR WM'S */
+
+/* remove window title from Client-Side Decorations */
+.solid-csd headerbar .title {
+  font-size: 0;
+}
+
+/* hide extra window decorations/double border */
+window decoration,
+.solid-csd decoration {
+  margin: 0;
+  border: none;
+  padding: 0;
 }
